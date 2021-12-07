@@ -242,11 +242,11 @@ public class emp extends javax.swing.JFrame {
                 pst.setInt(4, jobId);
                 pst.executeUpdate();
                 tableUpdate();
-                JOptionPane.showMessageDialog(this, "Inserted");
                 empname.setText("");
                 empphone.setText("");
                 empjob.setText("");
                 empsalary.setText("");
+                JOptionPane.showMessageDialog(this, "Inserted");
             }
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(emp.class.getName()).log(Level.SEVERE, null, ex);
@@ -286,11 +286,11 @@ public class emp extends javax.swing.JFrame {
             pst.setInt(4, id);
             pst.executeUpdate();
             tableUpdate();
-            JOptionPane.showMessageDialog(this, "Updated");
             empname.setText("");
             empphone.setText("");
             empjob.setText("");
             empsalary.setText("");
+            JOptionPane.showMessageDialog(this, "Updated");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(emp.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
@@ -307,11 +307,11 @@ public class emp extends javax.swing.JFrame {
             int id = Integer.parseInt(model.getValueAt(selectedindex, 0).toString());
             pst = con.prepareStatement("DELETE FROM EMPLOYEE WHERE ID = ?");
             pst.setInt(1, id);
-            JOptionPane.showMessageDialog(this, "Deleted");
             empname.setText("");
             empphone.setText("");
             empjob.setText("");
             empsalary.setText("");
+            JOptionPane.showMessageDialog(this, "Deleted");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(emp.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
