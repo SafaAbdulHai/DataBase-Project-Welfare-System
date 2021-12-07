@@ -28,92 +28,122 @@ public class homePage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel7 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
         LogIn = new javax.swing.JButton();
         signup = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        displayField2 = new javax.swing.JLabel();
+        dateField = new javax.swing.JTextField();
+
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(233, 255, 219));
 
-        jPanel2.setBackground(new java.awt.Color(233, 255, 219));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102), 3));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 28)); // NOI18N
-        jLabel2.setText("Welcome To Hope Care Welfare");
-
-        jLabel3.setFont(new java.awt.Font("Algerian", 0, 16)); // NOI18N
-        jLabel3.setText("About us");
-
-        jTextArea1.setBackground(new java.awt.Color(233, 255, 219));
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("The thought of this Health cum \nSociety Care Center started from\nthe idea of group members, when \nthey were working on one of their\ncourse project. They named it \n\"Hope Care Center\" with this \nbeleive that they can kindle a \nlittle spark in today's world.\nHope center today is a growing \noraganization providing ambulance \nand blood bank facilities to \nvarioushospitals and people who \nare in need.\n\n\n");
-        jTextArea1.setAlignmentX(2.0F);
-        jTextArea1.setMargin(new java.awt.Insets(1, 1, 1, 1));
-        jScrollPane1.setViewportView(jTextArea1);
-
-        LogIn.setBackground(new java.awt.Color(102, 205, 170));
-        LogIn.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        LogIn.setBackground(new java.awt.Color(255, 255, 255));
+        LogIn.setFont(new java.awt.Font("Verdana", 1, 16)); // NOI18N
+        LogIn.setForeground(new java.awt.Color(0, 0, 102));
         LogIn.setText("Log In");
         LogIn.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        LogIn.setContentAreaFilled(false);
         LogIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogInActionPerformed(evt);
             }
         });
+        jPanel2.add(LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 90, 40));
 
-        signup.setBackground(new java.awt.Color(102, 205, 170));
-        signup.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        signup.setBackground(new java.awt.Color(255, 255, 255));
+        signup.setFont(new java.awt.Font("Verdana", 1, 16)); // NOI18N
+        signup.setForeground(new java.awt.Color(0, 0, 102));
         signup.setText("Sign Up");
         signup.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        signup.setContentAreaFilled(false);
         signup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 signupActionPerformed(evt);
             }
         });
+        jPanel2.add(signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 90, 40));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(201, 201, 201)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(LogIn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(signup, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                            .addGap(40, 40, 40)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel2)
-                                .addGroup(jPanel2Layout.createSequentialGroup()
-                                    .addGap(81, 81, 81)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(43, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(signup)
-                    .addComponent(LogIn, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(51, Short.MAX_VALUE))
-        );
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/database/project/icons8-nature-care-69.png"))); // NOI18N
+        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 95, 76));
+
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 26)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel1.setText("WELCOME TO HOPE CARE");
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel5.setText("No Religion is bigger than Humanity.");
+        jLabel5.setToolTipText("");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 240, 190));
+
+        jLabel6.setFont(new java.awt.Font("Trebuchet MS", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel6.setText("~ Abdul Sattar Edhi");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 120, 20));
+
+        displayField2.setFont(new java.awt.Font("Trebuchet MS", 1, 12)); // NOI18N
+        displayField2.setForeground(new java.awt.Color(0, 153, 153));
+        displayField2.setToolTipText("Month, Year");
+        displayField2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        displayField2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                displayField2MouseMoved(evt);
+            }
+        });
+        displayField2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                displayField2MouseExited(evt);
+            }
+        });
+        jPanel1.add(displayField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 70, 20));
+
+        dateField.setEditable(false);
+        dateField.setBackground(new java.awt.Color(255, 255, 255));
+        dateField.setFont(new java.awt.Font("Trebuchet MS", 1, 72)); // NOI18N
+        dateField.setForeground(new java.awt.Color(0, 153, 153));
+        dateField.setText("7 Dec");
+        dateField.setToolTipText("Today's Date");
+        dateField.setBorder(null);
+        dateField.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        dateField.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                dateFieldMouseMoved(evt);
+            }
+        });
+        dateField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                dateFieldMouseExited(evt);
+            }
+        });
+        dateField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dateFieldActionPerformed(evt);
+            }
+        });
+        jPanel1.add(dateField, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, 70));
+
+        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, 320, 320));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -123,7 +153,9 @@ public class homePage extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(93, Short.MAX_VALUE))
         );
 
         pack();
@@ -139,6 +171,30 @@ public class homePage extends javax.swing.JFrame {
         setVisible(false);
         new SignUp().setVisible(true);
     }//GEN-LAST:event_signupActionPerformed
+
+    private void displayField2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_displayField2MouseMoved
+        // TODO add your handling code here:
+        displayField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255,255,255)));
+    }//GEN-LAST:event_displayField2MouseMoved
+
+    private void displayField2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_displayField2MouseExited
+        // TODO add your handling code here:
+        displayField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+    }//GEN-LAST:event_displayField2MouseExited
+
+    private void dateFieldMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dateFieldMouseMoved
+        // TODO add your handling code here:
+        dateField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255,255,255)));
+    }//GEN-LAST:event_dateFieldMouseMoved
+
+    private void dateFieldMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dateFieldMouseExited
+        // TODO add your handling code here:
+        dateField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+    }//GEN-LAST:event_dateFieldMouseExited
+
+    private void dateFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dateFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dateFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,11 +233,17 @@ public class homePage extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton LogIn;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JTextField dateField;
+    private javax.swing.JLabel displayField;
+    private javax.swing.JLabel displayField1;
+    private javax.swing.JLabel displayField2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JButton signup;
     // End of variables declaration//GEN-END:variables
 }
