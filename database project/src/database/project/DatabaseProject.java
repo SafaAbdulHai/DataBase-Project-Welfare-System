@@ -32,6 +32,6 @@ public class DatabaseProject {
     }
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        new homePage().setVisible(true);
+        new homePage2().setVisible(true);
     }
 }

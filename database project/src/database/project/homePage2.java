@@ -9,12 +9,12 @@ package database.project;
  *
  * @author Huda
  */
-public class homePage extends javax.swing.JFrame {
+public class homePage2 extends javax.swing.JFrame {
 
     /**
      * Creates new form homePage
      */
-    public homePage() {
+    public homePage2() {
         initComponents();
         
     }
@@ -47,8 +47,6 @@ public class homePage extends javax.swing.JFrame {
         setBackground(new java.awt.Color(233, 255, 219));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102), 3));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LogIn.setBackground(new java.awt.Color(255, 255, 255));
         LogIn.setFont(new java.awt.Font("Verdana", 1, 16)); // NOI18N
@@ -61,7 +59,6 @@ public class homePage extends javax.swing.JFrame {
                 LogInActionPerformed(evt);
             }
         });
-        jPanel2.add(LogIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 90, 40));
 
         signup.setBackground(new java.awt.Color(255, 255, 255));
         signup.setFont(new java.awt.Font("Verdana", 1, 16)); // NOI18N
@@ -74,33 +71,27 @@ public class homePage extends javax.swing.JFrame {
                 signupActionPerformed(evt);
             }
         });
-        jPanel2.add(signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 90, 40));
 
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/database/project/icons8-nature-care-69.png"))); // NOI18N
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 95, 76));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 26)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("WELCOME TO HOPE CARE");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 102));
         jLabel5.setText("No Religion is bigger than Humanity.");
         jLabel5.setToolTipText("");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 240, 190));
 
         jLabel6.setFont(new java.awt.Font("Trebuchet MS", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 102, 102));
         jLabel6.setText("~ Abdul Sattar Edhi");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 120, 20));
 
         displayField2.setFont(new java.awt.Font("Trebuchet MS", 1, 12)); // NOI18N
         displayField2.setForeground(new java.awt.Color(0, 153, 153));
@@ -116,7 +107,6 @@ public class homePage extends javax.swing.JFrame {
                 displayField2MouseExited(evt);
             }
         });
-        jPanel1.add(displayField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 70, 20));
 
         dateField.setEditable(false);
         dateField.setBackground(new java.awt.Color(255, 255, 255));
@@ -141,21 +131,84 @@ public class homePage extends javax.swing.JFrame {
                 dateFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(dateField, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, 70));
 
-        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, 320, 320));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(dateField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(140, 140, 140)
+                .addComponent(displayField2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(150, 150, 150)
+                        .addComponent(dateField, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(displayField2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LogIn, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(signup, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(13, 13, 13)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addComponent(jLabel1)
+                .addGap(99, 99, 99)
+                .addComponent(LogIn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
+                .addComponent(signup, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(93, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -174,12 +227,12 @@ public class homePage extends javax.swing.JFrame {
 
     private void displayField2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_displayField2MouseMoved
         // TODO add your handling code here:
-        displayField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255,255,255)));
+       
     }//GEN-LAST:event_displayField2MouseMoved
 
     private void displayField2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_displayField2MouseExited
         // TODO add your handling code here:
-        displayField.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+        
     }//GEN-LAST:event_displayField2MouseExited
 
     private void dateFieldMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dateFieldMouseMoved
@@ -213,20 +266,21 @@ public class homePage extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(homePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homePage2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(homePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homePage2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(homePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homePage2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(homePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homePage2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new homePage().setVisible(true);
+                new homePage2().setVisible(true);
             }
         });
     }
@@ -234,8 +288,6 @@ public class homePage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton LogIn;
     private javax.swing.JTextField dateField;
-    private javax.swing.JLabel displayField;
-    private javax.swing.JLabel displayField1;
     private javax.swing.JLabel displayField2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
